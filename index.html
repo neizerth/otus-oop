@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Урок 2. ООП в JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./vendor/reveal/reset.css" />
+    <link rel="stylesheet" href="./vendor/reveal/reveal.css" />
+    <link rel="stylesheet" href="./vendor/reveal/plugin/highlight/github.min.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="slides.md"
+          data-separator="^\r?\n---\r?\n$"
+          data-separator-vertical="^\r?\n--\r?\n$"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+      </div>
+    </div>
+
+    <script src="./vendor/reveal/reveal.js"></script>
+    <script src="./vendor/reveal/plugin/markdown/markdown.js"></script>
+    <script src="./vendor/reveal/plugin/highlight/highlight.js"></script>
+    <script src="./vendor/reveal/plugin/notes/notes.js"></script>
+    <script src="./vendor/reveal/plugin/zoom/zoom.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        hashOneBasedIndex: true,
+        controls: true,
+        progress: true,
+        center: false,
+        slideNumber: "c/t",
+        navigationMode: "linear",
+        transition: "slide",
+        backgroundTransition: "fade",
+        width: 1280,
+        height: 720,
+        margin: 0.045,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+      });
+    </script>
+  </body>
+</html>
